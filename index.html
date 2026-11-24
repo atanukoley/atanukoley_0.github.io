@@ -1,189 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Atanu Koley | Astrophysicist</title>
+    <title>Atanu Koley | Astrophysicist</title>
 
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+        }
 
-body {
-    font-family: Arial, sans-serif;
-    background: #f5f7fa;
-    color: #333;
-    line-height: 1.7;
-}
+        header {
+            background-color: #142b4a;
+            color: white;
+            padding: 30px 10%;
+        }
 
-header {
-    background: #12345a;
-    color: white;
-    padding: 35px 20px;
-    text-align: center;
-}
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
 
-header h1 {
-    font-size: 36px;
-    margin-bottom: 8px;
-}
+        header p {
+            font-size: 17px;
+            margin-top: 8px;
+        }
 
-header p {
-    font-size: 17px;
-}
+        nav {
+            background-color: #203e63;
+            padding: 14px 10%;
+        }
 
-nav {
-    background: #08213e;
-    padding: 15px;
-    text-align: center;
-    position: sticky;
-    top: 0;
-}
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 25px;
+            font-size: 15px;
+        }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 14px;
-    font-size: 15px;
-}
+        nav a:hover {
+            color: #f4c95d;
+        }
 
-nav a:hover {
-    color: #66ccff;
-}
+        .container {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 25px;
+        }
 
-.container {
-    max-width: 1050px;
-    margin: auto;
-    padding: 30px 20px;
-}
+        .about-section {
+            display: flex;
+            align-items: center;
+            gap: 45px;
+            background-color: white;
+            padding: 35px;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+        }
 
-section {
-    background: white;
-    padding: 25px;
-    margin-bottom: 25px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-}
+        .profile-photo {
+            flex: 0 0 280px;
+        }
 
-h2 {
-    color: #12345a;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #dce5ef;
-    padding-bottom: 8px;
-}
+        .profile-photo img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+        }
 
-ul {
-    padding-left: 25px;
-}
+        .about-text {
+            flex: 1;
+        }
 
-li {
-    margin-bottom: 8px;
-}
+        .about-text h2 {
+            color: #142b4a;
+            font-size: 28px;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
 
-a {
-    color: #1769aa;
-}
+        .about-text p {
+            font-size: 17px;
+            line-height: 1.8;
+            text-align: justify;
+        }
 
-footer {
-    background: #08213e;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 30px;
-}
+        footer {
+            text-align: center;
+            padding: 25px;
+            background-color: #142b4a;
+            color: white;
+            margin-top: 50px;
+        }
 
-.profile {
-    text-align: center;
-}
+        @media (max-width: 700px) {
+            .about-section {
+                flex-direction: column;
+                text-align: center;
+            }
 
-.profile img {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 15px;
-    border: 4px solid #dce5ef;
-}
+            .profile-photo {
+                flex: none;
+                max-width: 250px;
+            }
 
-@media(max-width: 700px) {
-    nav a {
-        display: inline-block;
-        margin: 5px 8px;
-    }
+            .about-text p {
+                text-align: left;
+            }
 
-    header h1 {
-        font-size: 28px;
-    }
-}
-</style>
+            nav a {
+                display: inline-block;
+                margin: 5px 12px 5px 0;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-<header>
-    <h1>Atanu Koley</h1>
-    <p>Astrophysicist | Interstellar Medium | Star Formation | MHD Turbulence</p>
-    <p>FONDECYT Postdoctoral Researcher</p>
-    <p>Universidad de Concepción, Chile</p>
-</header>
+    <header>
+        <h1>Atanu Koley</h1>
+        <p>Astrophysicist | FONDECYT Postdoctoral Researcher</p>
+        <p>Universidad de Concepción, Chile</p>
+    </header>
 
-<nav>
-    <a href="#about">About</a>
-    <a href="#research">Research</a>
-    <a href="#projects">Projects</a>
-    <a href="#publications">Publications</a>
-    <a href="#teaching">Teaching</a>
-    <a href="#awards">Awards</a>
-    <a href="#contact">Contact</a>
-</nav>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-<div class="container">
+    <div class="container">
 
-<section id="about">
+        <section class="about-section" id="about">
 
- <div class="about-container">
+            <!-- Photograph on the left -->
+            <div class="profile-photo">
+                <img src="atanu.jpg" alt="Photograph of Atanu Koley">
+            </div>
 
-  <div class="profile-photo">
-    <img src="atanu.png" alt="Atanu Koley">
-  </div>
+            <!-- About Me text on the right -->
+            <div class="about-text">
+                <h2>About Me</h2>
 
-  <div class="about-text">
+                <p>
+                    I am an astrophysicist currently working as a FONDECYT
+                    Postdoctoral Researcher at the Universidad de Concepción,
+                    Chile. I completed my PhD at the Indian Institute of
+                    Science (IISc), Bangalore, India, in 2022.
+                </p>
 
-    <h2>About Me</h2>
-    <p>
-    I am an astrophysicist currently working as a FONDECYT
-    Postdoctoral Researcher at the Universidad de Concepción, Chile.
-    I completed my PhD at the Indian Institute of Science (IISc),
-    Bangalore, India, in 2022.
-    </p>
+                <p>
+                    My research focuses on understanding the physical processes
+                    governing the interstellar medium (ISM) in the Milky Way,
+                    particularly the interplay between turbulence, magnetic
+                    fields, and star formation. I work at the interface between
+                    observational and theoretical astrophysics.
+                </p>
 
-    <p>
-    My research focuses on understanding the physical processes
-    governing the interstellar medium (ISM) in the Milky Way,
-    particularly the interplay between turbulence, magnetic fields,
-    and star formation.
-    </p>
-</section>
+            </div>
 
-<section id="research">
-    <h2>Research Interests</h2>
-    <ul>
-        <li>Interstellar Medium (ISM)</li>
-        <li>Magnetic Fields in Molecular Clouds</li>
-        <li>Magnetohydrodynamic (MHD) Turbulence</li>
-        <li>Massive Star Formation and Protoclusters</li>
-        <li>Atomic and Molecular Gas</li>
-        <li>Thermal Phase Distribution of the Neutral ISM</li>
-        <li>Velocity Gradient Techniques</li>
-    </ul>
-</section>
+        </section>
 
-<section id="projects">
-    <h2>Research Projects</h2>
+    </div>
 
-    <h3>FONDECYT Postdoctoral Research Project</h3>
-    <p><b>Project No.:</b> 325
+    <footer>
+        <p>© 2026 Atanu Koley | Astrophysicist</p>
+    </footer>
+
+</body>
+</html>
+
