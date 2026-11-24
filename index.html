@@ -1,68 +1,169 @@
-
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research | Atanu Koley</title>
+    <title>Atanu Koley | Astrophysicist</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            color: #333;
-            background: white;
-            line-height: 1.8;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #20242b;
+            color: white;
         }
 
         header {
-            padding: 25px 10%;
-            border-bottom: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 6%;
         }
 
         header h1 {
-            font-size: 28px;
-            margin: 0;
-            color: #222;
+            font-size: 22px;
+            font-weight: normal;
+            letter-spacing: 2px;
         }
 
-        nav {
-            margin-top: 15px;
-        }
-
-        nav a {
+        .menu a {
+            color: white;
             text-decoration: none;
-            color: #555;
-            margin-right: 25px;
-            font-size: 15px;
+            margin-left: 25px;
+            font-size: 14px;
         }
 
-        nav a:hover {
-            color: #0077aa;
+        .menu a:hover {
+            color: #8bd3e6;
         }
 
-        main {
-            max-width: 950px;
-            margin: 55px auto;
-            padding: 0 25px;
+        .intro {
+            text-align: center;
+            padding: 35px 20px;
         }
 
-        h2 {
-            font-size: 28px;
-            color: #222;
+        .intro h2 {
+            font-size: 30px;
+            font-weight: normal;
+            letter-spacing: 2px;
         }
 
-        h3 {
-            color: #176b87;
-            margin-top: 30px;
+        .intro p {
+            color: #c5c5c5;
+            font-size: 16px;
+        }
+
+        .tiles {
+            max-width: 1100px;
+            margin: 25px auto 60px;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+        }
+
+        .tile {
+            height: 230px;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            background-size: cover;
+            background-position: center;
+            border-radius: 4px;
+            transition: transform 0.3s ease;
+        }
+
+        .tile::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.48);
+            transition: background 0.3s ease;
+        }
+
+        .tile:hover {
+            transform: scale(1.02);
+        }
+
+        .tile:hover::before {
+            background: rgba(0, 0, 0, 0.25);
+        }
+
+        .tile-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .tile h3 {
+            font-size: 23px;
+            font-weight: normal;
+            letter-spacing: 2px;
+            margin-bottom: 8px;
+        }
+
+        .tile p {
+            font-size: 14px;
+            color: #eeeeee;
+        }
+
+        .about {
+            background-image: url("atanu.jpg");
+        }
+
+        .research {
+            background: linear-gradient(135deg, #173b55, #527b91);
+        }
+
+        .starformation {
+            background: linear-gradient(135deg, #251b42, #795c83);
+        }
+
+        .publications {
+            background: linear-gradient(135deg, #334b48, #77918b);
+        }
+
+        .teaching {
+            background: linear-gradient(135deg, #60432f, #ad8665);
+        }
+
+        .contact {
+            background: linear-gradient(135deg, #24364b, #526d8b);
         }
 
         footer {
-            border-top: 1px solid #ddd;
-            padding: 20px;
             text-align: center;
-            color: #777;
-            margin-top: 70px;
+            padding: 25px;
+            color: #aaaaaa;
+            font-size: 13px;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+            }
+
+            .menu {
+                margin-top: 15px;
+                text-align: center;
+            }
+
+            .menu a {
+                display: inline-block;
+                margin: 8px;
+            }
+
+            .tiles {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -70,68 +171,72 @@
 <body>
 
 <header>
-    <h1>Atanu Koley</h1>
+    <h1>ATANU KOLEY</h1>
 
-    <nav>
+    <div class="menu">
         <a href="index.html">Home</a>
         <a href="research.html">Research</a>
         <a href="publications.html">Publications</a>
-        <a href="teaching.html">Teaching</a>
-        <a href="cv.html">CV</a>
         <a href="contact.html">Contact</a>
-    </nav>
+    </div>
 </header>
 
-<main>
+<div class="intro">
+    <h2>ATANU KOLEY</h2>
+    <p>Astrophysicist | FONDECYT Postdoctoral Researcher</p>
+    <p>Universidad de Concepción, Chile</p>
+</div>
 
-    <h2>Research</h2>
+<div class="tiles">
 
-    <p>
-        My research aims to understand the physical processes
-        governing the interstellar medium (ISM) in the Milky Way,
-        with particular emphasis on the interplay between
-        turbulence, magnetic fields, and gravity in shaping
-        the multiphase ISM.
-    </p>
+    <a href="about.html" class="tile about">
+        <div class="tile-content">
+            <h3>ABOUT ME</h3>
+            <p>Biography and academic background</p>
+        </div>
+    </a>
 
-    <h3>Multiphase Interstellar Medium</h3>
+    <a href="research.html" class="tile research">
+        <div class="tile-content">
+            <h3>RESEARCH</h3>
+            <p>Interstellar medium, turbulence and magnetic fields</p>
+        </div>
+    </a>
 
-    <p>
-        I investigate the thermal phase distribution of the
-        neutral interstellar medium, focusing on the cold,
-        lukewarm, and warm neutral phases and their physical
-        properties.
-    </p>
+    <a href="research.html" class="tile starformation">
+        <div class="tile-content">
+            <h3>STAR FORMATION</h3>
+            <p>Massive star-forming regions and protoclusters</p>
+        </div>
+    </a>
 
-    <h3>Turbulence and Magnetic Fields</h3>
+    <a href="publications.html" class="tile publications">
+        <div class="tile-content">
+            <h3>PUBLICATIONS</h3>
+            <p>Research papers and scientific contributions</p>
+        </div>
+    </a>
 
-    <p>
-        I study the role of magnetohydrodynamic turbulence
-        and magnetic fields in regulating the structure,
-        dynamics, and evolution of the interstellar medium.
-    </p>
+    <a href="teaching.html" class="tile teaching">
+        <div class="tile-content">
+            <h3>TEACHING</h3>
+            <p>Teaching and academic activities</p>
+        </div>
+    </a>
 
-    <h3>Massive Star Formation</h3>
+    <a href="contact.html" class="tile contact">
+        <div class="tile-content">
+            <h3>CONTACT</h3>
+            <p>Get in touch</p>
+        </div>
+    </a>
 
-    <p>
-        I investigate the physical processes involved in
-        massive star-forming regions and protoclusters,
-        using radio and submillimetre observations.
-    </p>
-
-    <h3>Observational and Theoretical Astrophysics</h3>
-
-    <p>
-        My work combines observational studies with theoretical
-        and numerical approaches to understand the complex
-        physical processes operating in the interstellar medium.
-    </p>
-
-</main>
+</div>
 
 <footer>
-    © 2026 Atanu Koley
+    © 2026 Atanu Koley | Astrophysicist
 </footer>
 
 </body>
 </html>
+
