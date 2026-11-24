@@ -1,45 +1,50 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Atanu Koley | Astronomer & Astrophysicist</title>
+    <title>Atanu Koley | Astrophysicist</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
-            background-color: #f5f7fa;
             color: #333;
+            background: #ffffff;
+            line-height: 1.7;
         }
 
         header {
-            background-color: #142b4a;
+            background: #142b4a;
             color: white;
-            padding: 30px 10%;
+            padding: 35px 10%;
         }
 
         header h1 {
             margin: 0;
-            font-size: 32px;
+            font-size: 34px;
         }
 
         header p {
+            margin: 5px 0 0;
             font-size: 17px;
-            margin-top: 8px;
         }
 
         nav {
-            background-color: #203e63;
-            padding: 14px 10%;
+            background: #203e63;
+            padding: 15px 10%;
+            position: sticky;
+            top: 0;
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            margin-right: 25px;
+            margin-right: 28px;
             font-size: 15px;
         }
 
@@ -49,74 +54,68 @@
 
         .container {
             max-width: 1100px;
-            margin: 50px auto;
+            margin: 45px auto;
             padding: 0 25px;
         }
 
-        .about-section {
+        .about {
             display: flex;
+            gap: 40px;
             align-items: center;
-            gap: 45px;
-            background-color: white;
-            padding: 35px;
-            border-radius: 10px;
-            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
         }
 
-        .profile-photo {
-            flex: 0 0 280px;
-        }
-
-        .profile-photo img {
-            width: 100%;
+        .about img {
+            width: 280px;
             height: auto;
-            border-radius: 10px;
-            object-fit: cover;
+            border-radius: 5px;
         }
 
         .about-text {
             flex: 1;
         }
 
-        .about-text h2 {
+        h2 {
             color: #142b4a;
-            font-size: 28px;
-            margin-top: 0;
-            margin-bottom: 20px;
+            font-size: 27px;
+            border-bottom: 2px solid #e5e5e5;
+            padding-bottom: 8px;
         }
 
-        .about-text p {
-            font-size: 17px;
-            line-height: 1.8;
-            text-align: justify;
+        section {
+            margin-bottom: 55px;
+        }
+
+        .research-box {
+            background: #f4f7fa;
+            padding: 20px;
+            margin: 15px 0;
+            border-left: 4px solid #203e63;
+        }
+
+        a {
+            color: #245b91;
         }
 
         footer {
-            text-align: center;
-            padding: 25px;
-            background-color: #142b4a;
+            background: #142b4a;
             color: white;
-            margin-top: 50px;
+            text-align: center;
+            padding: 22px;
         }
 
         @media (max-width: 700px) {
-            .about-section {
+            .about {
                 flex-direction: column;
-                text-align: center;
+                align-items: flex-start;
             }
 
-            .profile-photo {
-                flex: none;
-                max-width: 250px;
-            }
-
-            .about-text p {
-                text-align: left;
+            .about img {
+                width: 230px;
             }
 
             nav a {
                 display: inline-block;
-                margin: 5px 12px 5px 0;
+                margin: 5px 15px 5px 0;
             }
         }
     </style>
@@ -124,59 +123,143 @@
 
 <body>
 
-    <header>
-        <h1>Atanu Koley</h1>
-        <p>Astrophysicist | FONDECYT Postdoctoral Fellow</p>
-        <p>Universidad de Concepción, Chile</p>
-    </header>
+<header>
+    <h1>Atanu Koley</h1>
+    <p>Astrophysicist | FONDECYT Postdoctoral Researcher</p>
+    <p>Universidad de Concepción, Chile</p>
+</header>
 
-    <nav>
-        <a href="#about">About Me</a>
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#contact">Contact</a>
-    </nav>
+<nav>
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#projects">Projects</a>
+    <a href="#publications">Publications</a>
+    <a href="#teaching">Teaching</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-    <div class="container">
+<div class="container">
 
-        <section class="about-section" id="about">
+    <section id="about">
+        <div class="about">
 
-            <!-- Photograph on the left -->
-            <div class="profile-photo">
-                <img src="atanu.jpg" alt="Photograph of Atanu Koley">
-            </div>
+            <img src="atanu.jpg" alt="Atanu Koley">
 
-            <!-- About Me text on the right -->
             <div class="about-text">
                 <h2>About Me</h2>
 
                 <p>
-                    I am an astrophysicist currently working as a FONDECYT
-                    Postdoctoral Fellow at the Universidad de Concepción,
-                    Chile. I completed my PhD at the Indian Institute of
-                    Science (IISc), Bangalore, India, in 2022.
+                    I am an astrophysicist currently working as a
+                    FONDECYT Postdoctoral Researcher at the Universidad
+                    de Concepción, Chile. I completed my PhD at the
+                    Indian Institute of Science (IISc), Bangalore,
+                    India, in 2022.
                 </p>
 
                 <p>
-                    My research focuses on understanding the physical processes governing the interstellar medium (ISM) in the Milky Way, particularly how turbulence, 
-                    magnetic fields, and gravity interact in shaping the structure, dynamics, and evolution of the multiphase ISM. I work at the interface between 
+                    My research focuses on understanding the physical
+                    processes governing the interstellar medium (ISM)
+                    in the Milky Way, particularly how turbulence,
+                    magnetic fields, and gravity interact in shaping
+                    the structure, dynamics, and evolution of the
+                    multiphase ISM. I work at the interface between
                     observational and theoretical astrophysics.
-                    
-                    
-                    
-                    
                 </p>
-
             </div>
 
-        </section>
+        </div>
+    </section>
 
-    </div>
+    <section id="research">
+        <h2>Research Interests</h2>
 
-    <footer>
-        <p>© 2026 Atanu Koley | Astrophysicist</p>
-    </footer>
+        <div class="research-box">
+            <strong>Multiphase Interstellar Medium:</strong>
+            Thermal phase distribution and dynamics of neutral
+            atomic gas in the Milky Way.
+        </div>
+
+        <div class="research-box">
+            <strong>Turbulence and Magnetic Fields:</strong>
+            Understanding the role of MHD turbulence and magnetic
+            fields in the interstellar medium.
+        </div>
+
+        <div class="research-box">
+            <strong>Star Formation:</strong>
+            Physical processes governing massive star formation
+            and protocluster evolution.
+        </div>
+
+        <div class="research-box">
+            <strong>Observational and Theoretical Astrophysics:</strong>
+            Combining radio and submillimetre observations with
+            theoretical and numerical approaches.
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Research Projects</h2>
+
+        <h3>FONDECYT Postdoctoral Project (2025–2028)</h3>
+
+        <p>
+            <strong>Project:</strong> Measurement of turbulence and
+            magnetic field in massive star-forming regions.
+        </p>
+
+        <p>
+            Funded by ANID, Chile.
+            Project No. 3250070.
+        </p>
+    </section>
+
+    <section id="publications">
+        <h2>Publications</h2>
+
+        <p>
+            My research publications cover the interstellar medium,
+            turbulence, magnetic fields, and star formation.
+        </p>
+
+        <p>
+            <a href="https://ui.adsabs.harvard.edu/" target="_blank">
+                View my publications on NASA ADS
+            </a>
+        </p>
+    </section>
+
+    <section id="teaching">
+        <h2>Teaching and Academic Activities</h2>
+
+        <p>
+            Teaching Assistant, Fundamentals of Astrophysics,
+            Indian Institute of Science (IISc), Bangalore
+            (August–December 2018).
+        </p>
+
+        <p>
+            Participated in IISc Open Day activities.
+        </p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+
+        <p>
+            Universidad de Concepción, Chile
+        </p>
+
+        <p>
+            Email: Add your institutional email address here.
+        </p>
+    </section>
+
+</div>
+
+<footer>
+    © 2026 Atanu Koley | Astrophysicist
+</footer>
 
 </body>
 </html>
-
